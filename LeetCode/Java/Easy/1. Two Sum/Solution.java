@@ -1,15 +1,5 @@
 class Solution {
     public int[] twoSum(int[] nums, int target) {
-        for(int i=0; i<nums.length; i++){
-            for(int j=i+1; j<nums.length; j++){
-                if(nums[i]+nums[j]==target){
-                    return new int[] {i,j};
-                }
-            }
-        }
-        return new int[]{};
-    }
-}
 /*
 Arrays.sort(nums);
         int left = 0, right = nums.length - 1;
@@ -38,8 +28,8 @@ Arrays.sort(nums);
         }
         return ;
     }
-}
-       /* int [] arr= new int[2];
+}*/
+       int [] arr= new int[2];
         int sum=0;
         for(int i=0;i<nums.length-1;i++){
             for(int j=i+1;j<nums.length;j++){
@@ -53,4 +43,4 @@ Arrays.sort(nums);
         }
         return arr;
     } 
-}*/
+}
