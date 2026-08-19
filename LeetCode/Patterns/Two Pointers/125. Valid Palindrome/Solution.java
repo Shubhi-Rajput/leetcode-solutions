@@ -16,11 +16,9 @@ class Solution {
                 Character.toLowerCase(s.charAt(right))) {
                 return false;
             }
-
             left++;
             right--;
         }
-
         return true;
     }
 }
