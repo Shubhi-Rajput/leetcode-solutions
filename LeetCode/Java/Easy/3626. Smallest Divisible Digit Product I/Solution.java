@@ -1,7 +1,5 @@
 class Solution {
     public int smallestNumber(int n, int t) {
-      int prod=1;
-      int x=n;
       while (true) {
         int num = n;
         int product = 1;
