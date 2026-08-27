@@ -7,7 +7,6 @@ class Solution {
                 product *= num % 10;
                 num /= 10;
             }
-
             if (product % t == 0) {
                 return n;
             }
