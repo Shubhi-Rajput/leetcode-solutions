@@ -1,6 +1,6 @@
 # 📝 71. Simplify Path (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/simplify-path)
+🔗 [Problem Link](https://leetcode.com/problems/simplify-path/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Java-blue)
 
@@ -8,8 +8,8 @@
 String, Stack
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 3 ms
+- **Memory:** 44.9 MB
 
 ---
 
