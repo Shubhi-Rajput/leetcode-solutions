@@ -8,8 +8,8 @@
 Array, Math, Number Theory, Euclidean Algorithm, Greatest Common Divisor
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 0 ms
+- **Memory:** 45.2 MB
 
 ---
 
