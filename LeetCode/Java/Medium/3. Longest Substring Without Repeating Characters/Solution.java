@@ -14,6 +14,22 @@ class Solution {
         return maxLen;
         }
     }
+/*sliding window
+int l=0,r=0,max=0;
+StringBuilder sb=new StringBuilder();
+while(r<s.length()){
+char ch=s.charAt(r);
+while(sb.indexOf(ch+"")>=0){
+sb.deleteCharAt(0);
+l++;
+}
+sb.append(ch);
+max=Math.max(max,r-l+1);
+r++;
+}
+return max;
+}
+} */
 /*        Map<Character, Integer> map = new HashMap<>();
         int left = 0, maxLen = 0;
         for (int right = 0; right < s.length(); right++) {
