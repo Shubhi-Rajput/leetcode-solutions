@@ -8,7 +8,7 @@
 Array, Math, Enumeration, Number Theory, Primality Test, Sieve Theory, Prime Number Sieve
 
 ### 🚀 Performance
-- **Runtime:** N/A
+- **Runtime:** Successfully Evaluated
 - **Memory:** N/A
 
 ---
