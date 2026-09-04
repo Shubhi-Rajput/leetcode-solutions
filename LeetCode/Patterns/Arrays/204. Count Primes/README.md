@@ -1,6 +1,6 @@
 # 📝 204. Count Primes (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/count-primes/solutions/?envType=problem-list-v2&envId=array&)
+🔗 [Problem Link](https://leetcode.com/problems/count-primes/solutions/8500301/easy-clean-solution-sieve-approach-javac-z414/?envType=problem-list-v2&envId=array&)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Java-blue)
 
