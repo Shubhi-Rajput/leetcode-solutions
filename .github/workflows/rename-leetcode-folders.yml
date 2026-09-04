@@ -1,0 +1,51 @@
+name: Rename LeetCode Folders
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'LeetCode/**'
+
+permissions:
+  contents: write
+
+jobs:
+  rename-folders:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Rename LeetCode folders to 4-digit format
+        shell: pwsh
+        run: |
+          $changed = $false
+
+          Get-ChildItem -Path "LeetCode" -Directory -Recurse |
+            Sort-Object FullName -Descending |
+            ForEach-Object {
+              if ($_.Name -match '^(\d+)\.\s*(.+)$') {
+
+                $number = [int]$Matches[1]
+                $title = $Matches[2]
+
+                $newName = "{0:D4}. {1}" -f $number, $title
+                $newPath = Join-Path $_.Parent.FullName $newName
+
+                if ($_.Name -ne $newName -and -not (Test-Path $newPath)) {
+                  git mv -- "$($_.FullName)" "$newPath"
+                  $changed = $true
+                }
+              }
+            }
+
+          if ($changed) {
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+            git add LeetCode
+            git commit -m "Auto-format LeetCode folders to 4-digit format"
+            git push
+          }
