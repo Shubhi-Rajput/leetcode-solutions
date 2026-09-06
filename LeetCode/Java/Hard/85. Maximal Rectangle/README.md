@@ -8,8 +8,8 @@
 Array, Dynamic Programming, Stack, Matrix, Monotonic Stack
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 17 ms
+- **Memory:** 51.3 MB
 
 ---
 
