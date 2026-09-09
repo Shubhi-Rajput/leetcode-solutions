@@ -26,3 +26,14 @@ class Solution {
         return res;
     }
 }
+/*i%n
+n=5,i=0,1,2,3,4,0,1,2,3,4,0
+when i%n
+i=1;j=2 then 
+i+j = 3
+3 index is the last so we need to move in circle 
+that's why we did %n
+so that 3%n==3%3=0
+we return back to 0th index
+
+*/
