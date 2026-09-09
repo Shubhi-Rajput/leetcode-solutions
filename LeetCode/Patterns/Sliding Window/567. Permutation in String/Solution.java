@@ -1,6 +1,6 @@
 class Solution {
     public boolean checkInclusion(String s1, String s2) {
-        char[] arr1 = s1.toCharArray();
+/*        char[] arr1 = s1.toCharArray();
         Arrays.sort(arr1);
         String target = new String(arr1);
         int k = s1.length();
@@ -14,8 +14,8 @@ class Solution {
         }
         return false;
     }
-}
-/*        if (s1.length() > s2.length()) {
+}*/
+        if (s1.length() > s2.length()) {
             return false;
         }
 
@@ -59,4 +59,4 @@ class Solution {
 
         return false;
     }
-}*/
+}
