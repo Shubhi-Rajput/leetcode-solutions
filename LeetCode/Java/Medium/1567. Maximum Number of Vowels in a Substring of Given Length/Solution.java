@@ -9,28 +9,23 @@ class Solution {
         int count=0;
         int max=0;
         while (r < s.length()) {
-
             if (isVowel(s.charAt(r))) {
                 count++;
             }
-
             r++;
-
             while (r - l > k) {
-
                 if (isVowel(s.charAt(l))) {
                     count--;
                 }
-
                 l++;
             }
-
             if (r - l == k) {
                 max = Math.max(max, count);
             }
         }
-
         return max;
+    }
+}
         /*while(r<k){
             char c=s.charAt(r);
             if(isVowel[c]) count++;
@@ -45,6 +40,6 @@ class Solution {
             max=Math.max(max,count);
             if(max==k) return max;
         }
-        return max;*/
+        return max;
     }
-}
+}*/
