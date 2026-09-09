@@ -15,4 +15,4 @@ class Solution {
         }
         return res;
     }
-}
+} //now write optimised one
