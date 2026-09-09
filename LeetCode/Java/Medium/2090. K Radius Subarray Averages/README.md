@@ -1,6 +1,6 @@
 # 📝 2090. K Radius Subarray Averages (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/k-radius-subarray-averages)
+🔗 [Problem Link](https://leetcode.com/problems/k-radius-subarray-averages/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Java-blue)
 
