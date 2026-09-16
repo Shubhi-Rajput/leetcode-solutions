@@ -1,6 +1,6 @@
 class Solution {
     public List<Integer> findDisappearedNumbers(int[] nums) {
-        boolean[] present = new boolean[nums.length + 1];
+ /*       boolean[] present = new boolean[nums.length + 1];
         List<Integer> res = new ArrayList<>();
         // mark present numbers
         for (int num : nums) {
@@ -14,8 +14,8 @@ class Solution {
         }
         return res;
     }
-}
-       /* List<Integer> ans = new ArrayList<>();
+}*/
+        List<Integer> ans = new ArrayList<>();
         Set<Integer> set = new HashSet<>();
         for(int num: nums) set.add(num);
         
@@ -24,4 +24,4 @@ class Solution {
         }
         return ans;
     }
-}*/
+}
