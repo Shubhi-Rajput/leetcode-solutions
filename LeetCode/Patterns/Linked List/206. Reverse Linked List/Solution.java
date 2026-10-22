@@ -11,7 +11,23 @@
  *     }
  * }
  */
+class Solution {
+    public ListNode reverseList(ListNode head) {
+        if(head==null){
+            return null;
+        }
+        ListNode dummy = new ListNode(head.val);
+        ListNode temp = head.next;
+        while (temp != null){ 
+            ListNode newNode = new ListNode(temp.val); 
+            newNode.next = dummy; 
+            dummy = newNode; temp = temp.next;
+        } 
+        return dummy;
+    }
+}
 
+/*approach 1
 class Solution {
     public ListNode reverseList(ListNode head) {
 
@@ -49,3 +65,4 @@ class Solution {
         return head;
     }
 }
+*/
