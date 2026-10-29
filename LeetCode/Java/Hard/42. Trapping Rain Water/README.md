@@ -1,6 +1,6 @@
 # 📝 42. Trapping Rain Water (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/trapping-rain-water)
+🔗 [Problem Link](https://leetcode.com/problems/trapping-rain-water/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Hard-red) ![Language](https://img.shields.io/badge/Language-Java-blue)
 
@@ -8,8 +8,8 @@
 Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 108 ms
+- **Memory:** 48.5 MB
 
 ---
 
