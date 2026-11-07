@@ -1,16 +1,19 @@
 class Solution {
     public List<String> generateParenthesis(int n) {
-        List<String> ans = new ArrayList<>();
-        if(n == 0) {
-            ans.add("");
-            return ans;
+        List<List<String>> dp = new ArrayList<>();
+        dp.add(new ArrayList<>());
+        dp.get(0).add("");
+        for(int i = 1; i <= n; i++) {
+            List<String> current = new ArrayList<>();
+            for(int j = 0; j < i; j++) {
+                for(String left : dp.get(j)) {
+                    for(String right : dp.get(i - 1 - j)) {
+                        current.add("(" + left + ")" + right);
+                    }
+                }
+            }
+            dp.add(current);
         }
-        List<String> prev = generateParenthesis(n - 1);
-        for(String s : prev) {
-            ans.add("(" + s + ")");
-            ans.add("()" + s);
-            ans.add(s + "()");
-        }
-        return new ArrayList<>(new LinkedHashSet<>(ans));
+        return dp.get(n);
     }
 }
