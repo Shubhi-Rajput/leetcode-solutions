@@ -1,8 +1,8 @@
 class Solution {
     public List<String> generateParenthesis(int n) {
         List<String> ans = new ArrayList<>();
-        if(n == 1) {
-            ans.add("()");
+        if(n == 0) {
+            ans.add("");
             return ans;
         }
         List<String> prev = generateParenthesis(n - 1);
